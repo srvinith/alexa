@@ -1,3 +1,5 @@
+body {}
+
 .signin {
     background-color: #f2f2f2;
     width: 25%;
@@ -13,91 +15,116 @@
     padding: 30px 0px;
 }
 
-.alexa-login {
+/* .alexa-login {
     width: 90%;
     height: 40px;
     border: 2px solid black;
     margin: 10px auto;
     border-radius: 10px;
-}
+} */
 
-.alexa-login input {
-    border: 0;
-    outline: none;
-    margin-left: 40px;
-}
 
 .input-box {
     position: relative;
-    width: 100%;
+    width: 60%;
     height: 50px;
-    border-bottom: 2px solid #162938;
     margin: 30px 0;
+    border: 4px solid#3A1F1F;
+    background: black;
+    margin: 10px auto;
+    border-radius: 40px;
+    box-shadow: 2px #3A1F1F;
 }
 
 .input-box label {
-    position: absolute;
+    /* position: absolute;
     top: 32px;
     left: 5px;
     transform: translateY(-50%);
     font-size: 1em;
     color: #162938;
     pointer-events: none;
-    /* transition: 5s; */
+    */
 }
 
-.input-box input:focus~label,
-.input-box input:valid~label {
-    top: -5px;
-}
+
 
 .input-box input {
-    width: 100%;
-    height: 100%;
-    background: transparent;
+    width: 300px;
+    height: 44px;
     border: none;
     outline: none;
+    background: black;
+    color: white;
+    border-radius: 30px;
 }
 
-.input-box .icon {
-    position: absolute;
-    right: 8px;
-    font-size: 1.2em;
-    color: #162938;
-    line-height: 57px;
-}
-
-.remember-forgot {
-
-    margin: -15px 0 15px;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.remember-forget label input {
-    accent-color: #162938;
-    margin-right: 3px;
-
-}
-
-.remember-forget a {
-    color: #162938;
-    margin-right: 3px;
-}
-
-.remember-forget a:hover {
-    text-decoration: underline;
-}
-
-.btn {
-    width: 100%;
+.button-sub {
+    width: 35%;
     height: 45px;
-    background: #162938;
+    background: black;
     border: none;
     outline: none;
     border-radius: 6px;
     cursor: pointer;
-    font-size: 1em;
+    border-radius: 10px;
     color: #fff;
-    font-weight: 500;
+    text-align: center;
+    margin-left: 161px;
+    border-radius: 40px
+}
+
+.form-login {
+    margin-top: 30%;
+
+}
+
+span img {
+    width: 40px;
+    height: 40px;
+
+}
+
+h2 span {
+    color: #15AEEB;
+}
+
+.amazon-img {
+    margin-top: 20px;
+    margin-left: 20%;
+}
+
+.input-box i {
+    background-color: skyblue;
+    width: 18px;
+    height: 20px;
+    border-radius: 30px;
+    margin-left: 2px;
+}
+
+h2::first-letter {
+    color: #15AEEB;
+}
+
+
+
+.alex-txt {}
+
+.first-sec {
+    background: url(../images/Polygon.png);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+input::placeholder {
+    text-align: right;
+    color: white;
+    margin-left: 4px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .body {
+        background-color: red;
+    }
 }

@@ -12,53 +12,45 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3"></div>
-            <div class="col-md-6">
-                <!-- <div class="signin"> -->
-                <h2>Onwords</h2>
-                <!-- <div class="form-group">
-                        <form action="">
-                            <div >
-                                <div class="alexa-login">
-                                    <i class="fa-solid fa-envelope"></i>
-                                    <input type="text" placeholder="Email">
-                                </div>
-                                <div>
-                                    <i class="fa-solid fa-lock"></i>
-                                    <input type="text " placeholder="Password">
-                                </div>
+    <section class="first-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+
+                    <div class="form-login">
+                        <h2 class="text-center">Onwords</h2>
+                        <form action="#">
+                            <div class="input-box alexa-login">
+                                <img src="{% static 'images/email.png'%}" alt="">
+                                <!-- <i class=" fa-solid fa-envelope"></i> -->
+                                <input type="text" placeholder="Email">
                             </div>
-                        </form>
+                            <div class="input-box">
+                                <img src="{% static 'images/lock.png'%}" alt="">
+                                <input type="Password" placeholder="Password">
 
-                    </div> -->
-                <form action="#">
-                    <div class="input-box">
-
-                        <input type="email" required>
-                        <label>Email</label>
-                        <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                            </div>
+                            <div>
+                                <button class="button-sub" type="submit">Find Devices</button>
+                            </div>
                     </div>
-                    <div class="input-box">
-                        <span class="icon"><i class="fa-solid fa-lock"></i></span>
-                        <input type="Password" required>
-                        <label>Password</label>
+                    </form>
+                    <div class="amazon-img">
+                        <h6>Connect to</h6>
+                        <div class="amazon-alexa">
+                            <span><img src="{%static 'images/alexa-logo.png'%}" alt=""><span
+                                    style="margin-left: 20px;font:bold;">AMAZON ALEXA</span></span>
+                        </div>
                     </div>
-                    <div class="remember-forgot">
-                        <label> <input type="checkbox">Remember me</label>
-                        <a href="#">Forgot Password</a>
-                    </div>
-                    <button type="submit" class="btn">Login</button>
-                    <div class="login-register">
-                        <p>Don't have an account ?<a href="#" class="register-link">Register</a></p>
-                    </div>
-                </form>
+                </div>
             </div>
         </div>
+
         <div class="col-md-3"></div>
-    </div>
-    </div>
+        </div>
+        </div>
+    </section>
 
     <!-- bootstrap js -->
     <script src="{%static 'js/bootstrap.min.js'%}"></script>
