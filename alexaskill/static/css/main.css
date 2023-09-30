@@ -1,6 +1,6 @@
 body {}
 
-.signin {
+/* .signin {
     background-color: #f2f2f2;
     width: 25%;
     transform: translate(-50%, -50%);
@@ -13,7 +13,7 @@ body {}
     z-index: 10 !important;
     text-align: center;
     padding: 30px 0px;
-}
+} */
 
 /* .alexa-login {
     width: 90%;
@@ -128,7 +128,13 @@ input::placeholder {
         background-color: red;
     }
 } */
-.alexa-form {
+
+.amazon-alexa img {
+    width: 40px;
+    height: 40px;
+}
+
+.form {
     width: 90px;
     margin: auto;
 }
@@ -146,12 +152,173 @@ input::placeholder {
 }
 
 .form {
-    /* width: 100%; */
-    /* height: 100%; */
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* align-items: center; */
-    /* backdrop-filter: blur(5px);
-    border: 1px solid black;
+    width: 50%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* backdrop-filter: blur(5px); */
+    border: 2px solid #15AEEB;
     border-radius: 5px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    border-radius: 20px;
+
+}
+
+
+.form h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300px;
+    /* color: white; */
+}
+
+.form .login {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+
+.login input,
+button {
+    margin: 10px;
+    border: none;
+    outline: none;
+    background-color: black;
+    padding: 10px;
+    border-radius: 30px;
+    color: white;
+}
+
+input::placeholder {
+    text-align: right;
+    color: white;
+    font-size: 20px;
+}
+
+.login input {
+    background-image: url(../images/email.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 15px;
+    text-indent: 30px;
+}
+
+.login input:nth-child(3) {
+    background-image: url(../images/lock.png);
+}
+
+.login button {
+    background-color: black;
+    color: white;
+    width: 54%;
+    margin-left: 24%;
+    text-align: center;
+
+}
+
+.amzon-img h6 {
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+/* .first-sec {
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
 } */
+
+.amazon-img {
+    margin-left: -20%;
+}
+
+.amazon-txt {
+    margin-left: 10px;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.form h1::first-letter {
+    color: #15AEEB;
+}
+
+.form .form h1:nth-child(3) {
+    color: #15AEEB;
+}
+
+.onwords-logo {
+    width: 72%;
+    padding: 17px;
+}
+
+.right img {
+    height: 27vh;
+
+}
+
+.left {
+    float: right;
+    margin-top: 40%;
+}
+
+.left img {
+    height: 30vh;
+
+}
+
+@media only screen and (max-width: 900px) {
+    .form {
+        width: 100%;
+        transform: translate(-50%, -41%);
+        left: 50%;
+        top: 38%;
+    }
+
+    .form .login {
+        width: 75%;
+        margin: 15px;
+    }
+
+    .form {
+        border: none;
+    }
+
+    .amazon-img h6 {
+        font-weight: bold;
+        font-family: Lalezar;
+    }
+
+    .amazon-txt {
+        font-size: 25px;
+
+    }
+
+    .amazon-alexa {
+        margin-right: 10px;
+    }
+
+    .amazon-img {
+        margin-left: 10px;
+    }
+
+    .left img {
+        float: right;
+        margin-top: 36%;
+    }
+
+    .login button {
+        font-size: 24px;
+    }
+
+    .login .input {
+        height: 65px;
+        border: 2px solid #3A1F1F;
+    }
+}
